@@ -77,8 +77,31 @@ function nameMaker(first, middle, last) {
 console.log(nameMaker("John", "Fitzgerald", "Kennedy"));
 console.log(nameMaker("Robert", "\"Beto\"", "O'Rourke"));
 
-let fullNameReturn = makeFullName("Robert", "\"Beto\"", "O'Rourke"));
-console.log(fullNameReturn.toUpperCase())
+function makeBetterName(first, middle, last) {
+  if (middle.length === 1) {
+      middle = middle + ".";
+      let fullName = first + " " + middle + " " + last; 
+    return fullName;
+} else {
+    let fullName = first +  " " + middle + " " + last; 
+    return fullName; 
+  }
+}
+console.log(makeBetterName("Donald", "F", "Trump"));
+console.log(makeBetterName("Joan", "Marie", "Larkin"));
+
+function theHometeamwon(home, away) {
+  if (home > away) {
+   message = "the home team won"
+    
+    return message;
+} else {
+    message = "the away team won";
+
+    return message; 
+  }
+}
+
 
 
 </script>
