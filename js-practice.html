@@ -53,6 +53,32 @@ let lastName = "Whitehead";
 let name = firstName + " " + middleName + " " + lastName; 
 console.log(name);
 
+// Strings on my own
+
+let greeting = "My name is " + name;
+console.log(greeting)
+
+console.log("Using Functions:");
+
+//function to square numbers
+function makeSquare(theNumb) {
+    let square = theNumb * theNumb;
+    return square; 
+}
+
+let try01 = makeSquare(3)
+console.log(try01);
+
+function nameMaker(first, middle, last) {
+    let fullName = first + " " + middle + " " + last;
+    return fullName;
+}
+    
+console.log(nameMaker("John", "Fitzgerald", "Kennedy"));
+console.log(nameMaker("Robert", "\"Beto\"", "O'Rourke"));
+
+let fullNameReturn = makeFullName("Robert", "\"Beto\"", "O'Rourke"));
+console.log(fullNameReturn.toUpperCase())
 
 
 </script>
